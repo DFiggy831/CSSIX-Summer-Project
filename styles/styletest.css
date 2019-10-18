@@ -1,0 +1,106 @@
+.container {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 75px 100px 125px 125px 125px 125px 125px ;
+  grid-template-areas:
+  "d d d d d d d d d d d d d d "
+  "title title title title title title title title title title title title title title"
+  "sum sum sum sum sum sum sum sum sum art art art art art"
+  "sum sum sum sum sum sum sum sum sum art art art art art"
+  "sum sum sum sum sum sum sum sum sum art art art art art"
+  "r1 r1 r1 r2 r2 r2 r3 r3 r3 Reviews Reviews Reviews Reviews Reviews"
+  "r1 r1 r1 r2 r2 r2 r3 r3 r3 Reviews Reviews Reviews Reviews Reviews"
+  ;
+  
+
+
+}
+
+/* Making border black */
+body{
+  background-color: black;
+  margin: 0px;
+}
+#title {
+  grid-area: title;
+  background-color: #1a1a1d;
+  padding-top: 0px;
+  margin-top: 60px;
+}
+
+ 
+
+
+.dash{
+  grid-area: d;
+  background-color: black !important;
+  align-item: center!important;
+
+}
+
+/*the main colors:*/
+/*#1a1a1d*/
+/*#4e4e50*/
+/*#6f2232*/
+/*#950740*/
+/*#C3073F*/
+
+.R1{
+  grid-area: r1;
+  background-color: #1a1a1d !important;
+}
+.R2{
+  grid-area: r2;
+  background-color: #4e4e50!important;
+}
+.R3{
+  grid-area: r3;
+  background-color: #6f2232!important;
+  }
+
+.summary{
+  grid-area: sum;
+  background-color: #950740!important;
+  font-size: large!important;
+}
+
+#art{
+  grid-area: art;
+  background-color: #4e4e50!important ;
+  
+}
+.image1 {
+  height: 300px;
+  width: 300px;
+}
+.reviews {
+  grid-area: Reviews;
+  margin: 5px;
+  background-color: #6f2232!important;
+  padding-left: 0px;
+  tw-size: 10px;
+}
+
+
+.R1:hover{
+  box-shadow: inset 0 0 0 10px white;
+}
+
+.R2:hover{
+  box-shadow: inset 0 0 0 10px white;
+}
+
+.R3:hover{
+  box-shadow: inset 0 0 0 10px white;
+}
+ 
+  
+  
+  
+  
+  .summary, .R1, .R2, .R3, .dash,  #art, #title{
+    margin: 5px;
+    align-item: center;
+    justify-contect: center;
+    padding-left: 50px;
+  }

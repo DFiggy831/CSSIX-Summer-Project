@@ -1,0 +1,100 @@
+.News_body {
+  display:grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+  ". . . . T1 T1 T1 T1 T1 . . . ."
+  ". p1 p1 . p2 p2 . p3 p3 . p4 p4 ."
+  ". . MN MN . . . . UG UG UG UG ."
+  ". MS MS MS MS . . . p5 g1 g1 g1 ."
+  ". MS MS MS MS . . . p5 g1 g1 g1 ."
+  ". . . . . . . . p6 g2 g2 g2 ."
+  ". . p8 p8 . . . . p6 g2 g2 g2 ."
+  ". . . . . . . . . . . . ."
+  ". . . . . . . . p7 g3 g3 g3 ."
+  ". . . . . . . . p7 g3 g3 g3 .";
+  
+}
+
+
+body {
+    background-color: black
+}
+.title1 {
+    grid-area: T1;
+    color: white;
+    font-size:60px;
+}
+.p1 {
+    grid-area: p1;
+    width: 100%;
+    border-style: solid;
+    height:300px;
+}
+.p2 {
+    grid-area: p2;
+    width: 100%;
+    height: 100%;
+    
+}
+.p3 {
+    grid-area: p3;
+    width: 250px;
+    height: 100%;
+}
+.p4 {
+    grid-area: p4;
+    width: 100%;
+    height: 100%;
+}
+.p5 {
+    grid-area: p5;
+    width: 175px;
+    height: 170px;
+}
+.p6 {
+    grid-area: p6;
+    width: 175px;
+    height: 170px;
+}
+.p7 {
+    grid-area: p7;
+    width: 175px;
+    height:170px;
+}
+.p8 {
+    grid-area: p8;
+}
+.game1 {
+    grid-area: g1;
+    color: white;
+    font-size: 16px;
+}
+
+.game2 {
+    grid-area: g2;
+    color: white;
+    font-size: 16px;
+    padding-bottom: 60px;
+}
+.game3 {
+    grid-area: g3;
+    color: white;
+    font: 16px;
+}
+.mission {
+    grid-area: MN;
+    color: white;
+    border-bottom: 3px solid;
+}
+.paragraph {
+    grid-area: MS;
+    color: white;
+}
+.h1{
+    grid-area: UG;
+    color: white;
+    font-size: 12px;
+    border-bottom: 3px solid;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>Game </title>
+  <link rel="stylesheet" href="../styles/basic.1.css">
+  <link rel="stylesheet" href="../styles/styletest.css">
+  <link rel="shortcut icon" type="image/x-icon" href="../styles/favicon.ico" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../styles/style2.css">
+</head>
+<body>
+  <div class="container">
+  
+    <div class = "dashboard">
+            <div class="topnav">
+              <div class="dropdown">
+                    <button class="btn2">
+                        <i class="material-icons">list</i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="/reviews">Reviews</a>
+                      <a href="/news">News</a>
+                      <a href="/toppicks">Top Picks</a>
+                    </div>
+              </div>
+        
+              <form action= "/">
+                <button class="btn">Game Co</button>
+              </form>
+        <div class="search-container">
+          <form method= "POST" action="/search_game">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="material-icons">search</i></button>
+          </form>
+        </div>
+      </div> <!--this is all about the search bar-->
+    </div>
+    
+    <div id="title">{{title}}</div>
+
+    
+    <div class="reviews">Score:{{score}}<br>Rating:{{rating}}<br>Genre:<br>
+    {% for name in genre %}
+      {{name}} 
+    {% endfor %}
+    </div>
+    
+    <div class="summary">{{description}}</div>
+    
+    <!--recommendations-->
+    
+    <div class="R1">{{developer}}</div>
+    <div class="R2">{{publisher}}</div>
+    <div class="R3">{{release_date}}</div>
+    
+    
+
+    <div id="art">
+      <img class= "image1" src= "{{image}}">
+    </div>
+    
+  </div>
+</body>
